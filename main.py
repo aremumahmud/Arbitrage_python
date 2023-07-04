@@ -1,16 +1,16 @@
 import ccxt
 
 # Connect to Binance
-binance_api_key = ' '
-binance_api_secret = ' '
+binance_api_key = 'zphzNsRpLatgdc0N8iolzjFWr7qbXSaE8CLAIbg9XrKT6QzW0orzan7klz16LEEC'
+binance_api_secret = 'M35tAkINeuMELayPTmBRrtj2HJQokoBvdMaJVhqq9rGHogEzbnpcN2sHfrykvlnx'
 binance_exchange = ccxt.binance({
     'apiKey': binance_api_key,
     'secret': binance_api_secret
 })
 
 # Connect to KuCoin
-kucoin_api_key = ' '
-kucoin_api_secret = ' '
+kucoin_api_key = '6494c448e93c7c0001c7cb57'
+kucoin_api_secret = '18efa545-0e61-431b-a093-58a3e588090d'
 kucoin_exchange = ccxt.kucoin({
     'apiKey': kucoin_api_key,
     'secret': kucoin_api_secret
