@@ -1,0 +1,22 @@
+{
+  "name": "arbitrage_python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aremumahmud/Arbitrage_python.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aremumahmud/Arbitrage_python/issues"
+  },
+  "homepage": "https://github.com/aremumahmud/Arbitrage_python#readme",
+  "dependencies": {
+    "ccxt": "^4.0.29"
+  }
+}

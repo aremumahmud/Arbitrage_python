@@ -25,20 +25,21 @@ def perform_arbitrage():
     # Extract prices from the ticker data
     binance_price = binance_ticker['last']
     kucoin_price = kucoin_ticker['last']
-
+    print(binance_price)
+    print(kucoin_price)
     # Compare prices and perform arbitrage if conditions are met
-    if binance_price > kucoin_price + 1.5:
+    if binance_price > kucoin_price + 0.5:
         # Buy $50 worth of BTC on KuCoin
-        kucoin_amount = 50 / kucoin_price
-        kucoin_order = kucoin_exchange.create_market_buy_order('BTC/USDT', kucoin_amount)
+        # kucoin_amount = 50 / kucoin_price
+        # kucoin_order = kucoin_exchange.create_market_buy_order('BTC/USDT', kucoin_amount)
 
-        # Send the bought BTC to Binance
-        binance_address = binance_exchange.fetch_deposit_address('BTC')
-        binance_withdrawal = binance_exchange.withdraw('BTC', kucoin_amount, binance_address['address'])
+        # # Send the bought BTC to Binance
+        # binance_address = binance_exchange.fetch_deposit_address('BTC')
+        # binance_withdrawal = binance_exchange.withdraw('BTC', kucoin_amount, binance_address['address'])
 
         print('Arbitrage opportunity found and executed!')
-        print('Bought BTC on KuCoin:', kucoin_order)
-        print('Sent BTC to Binance:', binance_withdrawal)
+        # print('Bought BTC on KuCoin:', kucoin_order)
+        # print('Sent BTC to Binance:', binance_withdrawal)
     else:
         print('No arbitrage opportunity found.')
 
